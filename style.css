@@ -769,12 +769,10 @@ body {
 }
 
 .cta-button {
-  min-width: 520px;
-  height: 72px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 28px;
+  gap: 18px;
+  padding: 24px 50px;
   background: #c8a96b;
   color: #071633;
   text-decoration: none;
