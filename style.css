@@ -144,6 +144,28 @@ a {
   color: #c8a96b;
 }
 
+/* MOBILE MENU */
+
+.menu-toggle {
+  display: none;
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 1px solid #c8a96b;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 20px;
+  height: 2px;
+  background: #111827;
+  display: block;
+}
+
 /* =========================
    04. HERO
 ========================= */
@@ -766,11 +788,16 @@ a {
 @media (max-width: 768px) {
   .site-header {
     height: 78px;
+    padding: 0 24px;
   }
 
   .nav-links,
   .quote-btn {
     display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
   }
 
   .hero {
