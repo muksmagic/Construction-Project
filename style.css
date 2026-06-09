@@ -689,3 +689,123 @@ body {
     min-height: auto;
   }
 }
+
+/* =========================
+   CTA SECTION
+========================= */
+
+.cta-section {
+  position: relative;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #071633;
+}
+
+.cta-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(6, 19, 48, 0.82);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 1100px;
+  padding: 0 24px;
+  transform: translateY(-25px);
+}
+
+.cta-heading-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.cta-heading-label::before {
+  content: "";
+  width: 58px;
+  height: 1px;
+  background: #c8a96b;
+}
+
+.cta-heading-label .section-label {
+  color: #c8a96b;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cta-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 78px;
+  line-height: 0.92;
+  letter-spacing: -1px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 70px;
+}
+
+.cta-title em {
+  display: block;
+  margin-top: -20px;
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+  min-width: 520px;
+  height: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  background: #c8a96b;
+  color: #071633;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .cta-section {
+    min-height: 520px;
+  }
+
+  .cta-content {
+    transform: translateY(0);
+  }
+
+  .cta-title {
+    font-size: clamp(48px, 12vw, 68px);
+  }
+
+  .cta-button {
+    min-width: 0;
+    width: 100%;
+    padding: 20px 28px;
+  }
+}
