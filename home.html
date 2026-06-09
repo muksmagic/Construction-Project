@@ -15,7 +15,6 @@
 
 <body>
     <header class="site-header">
-
         <div class="logo">
             <span>LD</span>
             <small>PROJECTS</small>
@@ -31,13 +30,20 @@
 
         <a href="#" class="quote-btn">Get A Quote</a>
 
-        <!-- MOBILE MENU BUTTON -->
-        <button class="menu-toggle" aria-label="Open Menu">
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
 
+        <nav class="mobile-nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <a href="#" class="mobile-quote-btn">Get A Quote</a>
+        </nav>
     </header>
 
     <section class="hero">
@@ -320,6 +326,7 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
